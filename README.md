@@ -1,0 +1,1 @@
+# eslint-plugin-i18n-checker
