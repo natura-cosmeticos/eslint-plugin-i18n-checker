@@ -1,7 +1,7 @@
-const pathLocalizator = require('./src/path-localizator');
+const PathLocator = require('./src/path-locator');
 
-const runRule = (path, locales, context, node) => {
-  const result = pathLocalizator(path, locales);
+const runRule = (path, pathLocator, context, node) => {
+  const result = pathLocator.call(path);
 
   if (result.error) {
     context.report({
@@ -41,19 +41,29 @@ module.exports = {
 
     translationFunctionName = translationFunctionName || 'translate';
 
+    const pathLocator = new PathLocator(localesPath);
+
     return {
       ExpressionStatement(node) {
-        if (node.expression.callee.name === translationFunctionName) {
-          translateFirstArgument = node.expression.arguments[0] && node.expression.arguments[0].value;
+        if (node.expression.callee.name !== translationFunctionName) {
+          return;
+        }
 
-          runRule(translateFirstArgument, localesPath, context, node);
+        const translateFirstArgument = node.expression.arguments[0] && node.expression.arguments[0].value;
+
+        if (translateFirstArgument) {
+          runRule(translateFirstArgument, pathLocator, context, node);
         }
       },
       MemberExpression(node) {
-        if (node.object.name === translationFunctionName) {
-          translateFirstArgument = node.parent.arguments[0] && node.parent.arguments[0].value;
+        if (node.object.name !== translationFunctionName) {
+          return;
+        }
 
-          runRule(translateFirstArgument, localesPath, context, node);
+        const translateFirstArgument = node.parent.arguments[0] && node.parent.arguments[0].value;
+
+        if (translateFirstArgument) {
+          runRule(translateFirstArgument, pathLocator, context, node);
         }
       },
     }
