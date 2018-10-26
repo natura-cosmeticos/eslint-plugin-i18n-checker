@@ -1,8 +1,10 @@
 const _ = require('lodash');
+
 class PathLocator {
   constructor(locales) {
     this.translations = this.getTranslations(locales);
   }
+
   getTranslations(locales) {
     const translations = [];
 
@@ -16,6 +18,7 @@ class PathLocator {
 
     return translations;
   }
+
   checkPathInTranslation(path) {
     const filesWherePathIsNotFound = [];
 
@@ -31,8 +34,8 @@ class PathLocator {
 
     return filesWherePathIsNotFound;
   }
-  call(path) {
 
+  call(path) {
     const filesWherePathIsNotFound = this.checkPathInTranslation(path);
 
     if (!_.isEmpty(filesWherePathIsNotFound)) {
@@ -42,7 +45,7 @@ class PathLocator {
     }
 
     return {};
-  };
+  }
 }
 
 module.exports = PathLocator;

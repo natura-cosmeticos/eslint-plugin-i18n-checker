@@ -38,3 +38,4 @@ ruleTester.run('i18n-checker', rule, {
     },
   ],
 });
+
