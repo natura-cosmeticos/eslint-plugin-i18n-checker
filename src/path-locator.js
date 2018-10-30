@@ -1,8 +1,9 @@
 const _ = require('lodash');
 
 class PathLocator {
-  constructor(locales) {
+  constructor(locales, messagesBasePath) {
     this.translations = this.getTranslations(locales);
+    this.messagesBasePath = messagesBasePath;
   }
 
   getTranslations(locales) {
@@ -21,9 +22,14 @@ class PathLocator {
 
   checkPathInTranslation(path) {
     const filesWherePathIsNotFound = [];
+    let pathToFind = path;
+
+    if (this.messagesBasePath) {
+      pathToFind = `${this.messagesBasePath}.${path}`;
+    }
 
     this.translations.forEach(({ messages, file }) => {
-      const localizedString = _.get(messages.translation, path);
+      const localizedString = _.get(messages, pathToFind);
 
       if (_.isEmpty(localizedString)) {
         const filename = file.split('/').pop();

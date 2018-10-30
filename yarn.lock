@@ -18,6 +18,14 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
+"@naturacosmeticos/eslint-config-natura@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@naturacosmeticos/eslint-config-natura/-/eslint-config-natura-1.0.0.tgz#d2cd5648381edc5221a3a59782ccfbcfb775eebe"
+  integrity sha512-GfSHGeZ9RpW4xG1PZGKshPR8bhxBDBBscpAZxaEU1/EO2SZum8f6C+z8uOkBqBoid2cbECIolswCIDR5QUwcLw==
+  dependencies:
+    eslint "^5.7.0"
+    eslint-config-airbnb-base "^13.1.0"
+
 acorn-jsx@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-5.0.0.tgz#958584ddb60990c02c97c1bd9d521fce433bb101"
@@ -310,7 +318,7 @@ escape-string-regexp@1.0.5, escape-string-regexp@^1.0.5:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
-eslint-config-airbnb-base@^13.0.0:
+eslint-config-airbnb-base@^13.1.0:
   version "13.1.0"
   resolved "https://registry.yarnpkg.com/eslint-config-airbnb-base/-/eslint-config-airbnb-base-13.1.0.tgz#b5a1b480b80dfad16433d6c4ad84e6605052c05c"
   integrity sha512-XWwQtf3U3zIoKO1BbHh6aUhJZQweOwSt4c2JrPDg9FP3Ltv3+YfEv7jIDB8275tVnO/qOHbfuYg3kzw6Je7uWw==
@@ -318,13 +326,6 @@ eslint-config-airbnb-base@^13.0.0:
     eslint-restricted-globals "^0.1.1"
     object.assign "^4.1.0"
     object.entries "^1.0.4"
-
-"eslint-config-natura@https://s3.amazonaws.com/natura-globalsales-artifacts/libs/eslint-config-natura.tar.gz":
-  version "1.0.0"
-  resolved "https://s3.amazonaws.com/natura-globalsales-artifacts/libs/eslint-config-natura.tar.gz#5c5841f14b5756e0f768f4f6ffda66a5aad36767"
-  dependencies:
-    eslint "^5.3.0"
-    eslint-config-airbnb-base "^13.0.0"
 
 eslint-import-resolver-node@^0.3.1:
   version "0.3.2"
@@ -381,10 +382,10 @@ eslint-visitor-keys@^1.0.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#3f3180fb2e291017716acb4c9d6d5b5c34a6a81d"
   integrity sha512-qzm/XxIbxm/FHyH341ZrbnMUpe+5Bocte9xkmFMzPMjRaZMcXww+MpBptFvtU+79L362nqiLhekCxCxDPaUMBQ==
 
-eslint@^5.3.0, eslint@^5.7.0:
-  version "5.7.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-5.7.0.tgz#55c326d6fb2ad45fcbd0ce17c3846f025d1d819c"
-  integrity sha512-zYCeFQahsxffGl87U2aJ7DPyH8CbWgxBC213Y8+TCanhUTf2gEvfq3EKpHmEcozTLyPmGe9LZdMAwC/CpJBM5A==
+eslint@^5.7.0:
+  version "5.8.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-5.8.0.tgz#91fbf24f6e0471e8fdf681a4d9dd1b2c9f28309b"
+  integrity sha512-Zok6Bru3y2JprqTNm14mgQ15YQu/SMDkWdnmHfFg770DIUlmMFd/gqqzCHekxzjHZJxXv3tmTpH0C1icaYJsRQ==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     ajv "^6.5.3"

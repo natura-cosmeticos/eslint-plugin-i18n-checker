@@ -4,7 +4,7 @@ const PathLocator = require('../src/path-locator');
 
 describe('pathLocator', () => {
   describe('when path is a string (ex: "title")', () => {
-    it('return undefined when path is found in locales files', () => {
+    it('return empty object when path is found in locales files', () => {
       // given
       const locales = ['../test/fixtures/locales/es-pr.js'];
       const path = 'initialKits';
@@ -32,7 +32,7 @@ describe('pathLocator', () => {
   });
 
   describe('when path is a path (ex. home.title)', () => {
-    it('return undefined when path is found in locales files', () => {
+    it('return empty object when path is found in locales files', () => {
       // given
       const locales = ['../test/fixtures/locales/es-pr.js'];
       const path = 'home.title';

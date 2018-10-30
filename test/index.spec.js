@@ -1,9 +1,9 @@
 const { RuleTester } = require('eslint');
-const rule = require('../');
+const rule = require('../src/path-in-locales');
 
 const ruleTester = new RuleTester();
 
-ruleTester.run('i18n-checker', rule, {
+ruleTester.run('path-in-locales', rule, {
   invalid: [
     {
       code: 'translate("notFoundString")',
@@ -38,4 +38,3 @@ ruleTester.run('i18n-checker', rule, {
     },
   ],
 });
-
