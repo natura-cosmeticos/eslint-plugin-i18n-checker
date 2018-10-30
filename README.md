@@ -17,9 +17,43 @@ Considering the follow scenario:
 -------header.js
 ```
 
-In your `header.js` you have a call to your `i18n` function to get the localized value of the string `logout`: `translate('logout')`.
+In your `header.js` you have a call to your `i18n` function to get the localized value of the string *logout*: `translate('logout')`
 
 The `i18n-checker` will verify if the `logout` is defined in each locale file you have.
+
+# How to use
+
+## Installation
+
+```bash
+npm i --save-dev '@naturacosmeticos/eslint-plugin-i18n-checker'
+
+yarn add -D '@naturacosmeticos/eslint-plugin-i18n-checker'
+```
+
+## Configuration
+
+In your eslintrc file you need to add `@naturacosmeticos/eslint-plugin-i18n-checker` in the `plugins` section.
+
+### Options
+
+You can configure the following options:
+
+* **localesPath** - *string* - your locales relative path (*default is `/locales/`*)
+* **messagesBasePath** - *string* - if your locales files has a base path you can pass it (*default is undefined*)
+* **translationFunctionName** - *string* - the name of your translation function (*default is `translate`*)
+
+Example:
+
+```
+"i18n-checker/path-in-locales": ['error',
+  {
+    localesPath: 'public/locales/',
+    messagesBasePath: 'translations',
+    translationFunctionName: 't'
+  }
+]
+```
 
 # Contributing
 

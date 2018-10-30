@@ -78,10 +78,7 @@ module.exports = {
       additionalProperties: false,
       properties: {
         localesPath: {
-          items: {
-            type: 'string',
-          },
-          type: 'array',
+          type: 'string',
         },
         messagesBasePath: {
           type: 'string',
@@ -90,7 +87,6 @@ module.exports = {
           type: 'string',
         },
       },
-      required: ['localesPath'],
       type: 'object',
     }],
   },

@@ -14,7 +14,7 @@ ruleTester.run('path-in-locales', rule, {
       ],
       options: [
         {
-          localesPath: ['../test/fixtures/locales/es-pr.js'],
+          localesPath: 'test/fixtures/locales/',
         },
       ],
     },
@@ -24,7 +24,7 @@ ruleTester.run('path-in-locales', rule, {
       code: 'translate("initialKits")',
       options: [
         {
-          localesPath: ['../test/fixtures/locales/es-pr.js'],
+          localesPath: 'test/fixtures/locales/',
         },
       ],
     },
@@ -32,7 +32,7 @@ ruleTester.run('path-in-locales', rule, {
       code: 'translate("home.title")',
       options: [
         {
-          localesPath: ['../test/fixtures/locales/es-pr.js'],
+          localesPath: 'test/fixtures/locales/',
         },
       ],
     },
