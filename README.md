@@ -1,7 +1,7 @@
 # eslint-plugin-i18n-checker
 [![Known Vulnerabilities](https://snyk.io/test/github/natura-cosmeticos/eslint-plugin-i18n-checker/badge.svg)](https://snyk.io/test/github/natura-cosmeticos/eslint-plugin-i18n-checker)
 [![Build Status](https://api.travis-ci.org/natura-cosmeticos/eslint-plugin-i18n-checker.svg?branch=master)](https://travis-ci.org/natura-cosmeticos/eslint-plugin-i18n-checker)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/9ee01fcbab76443393f4e01d9711cf6f)](https://www.codacy.com/app/fabricio_2/eslint-plugin-i18n-checker?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=natura-cosmeticos/eslint-plugin-i18n-checker&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/9ee01fcbab76443393f4e01d9711cf6f)](https://www.codacy.com/app/fabricioffc/eslint-plugin-i18n-checker?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=natura-cosmeticos/eslint-plugin-i18n-checker&amp;utm_campaign=Badge_Grade)
 
 This eslint plugin helps you identify what locales keys are not included in your locales files.
 
@@ -56,6 +56,8 @@ Example:
 ```
 
 # Contributing
+
+You can contribute submitting [pull requests](https://github.com/natura-cosmeticos/eslint-plugin-i18n-checker/pulls).
 
 ## Setup
 
