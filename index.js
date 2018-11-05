@@ -8,10 +8,10 @@ module.exports = {
   configs: {
     recommended: {
       plugins: [
-        'i18n',
+        'i18n-checker',
       ],
       rules: {
-        'i18n/path-in-locales': 'warn',
+        'i18n-checker/path-in-locales': 'warn',
       }
     }
   }

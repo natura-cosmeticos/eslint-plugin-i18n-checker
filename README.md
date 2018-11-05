@@ -33,7 +33,7 @@ yarn add -D '@naturacosmeticos/eslint-plugin-i18n-checker'
 
 ## Configuration
 
-In your eslintrc file you need to add `@naturacosmeticos/eslint-plugin-i18n-checker` in the `plugins` section.
+In your eslintrc file you need to add `@naturacosmeticos/i18n-checker` in the `plugins` section.
 
 ### Options
 
@@ -46,7 +46,7 @@ You can configure the following options:
 Example:
 
 ```
-"i18n-checker/path-in-locales": ['error',
+"@naturacosmeticos/i18n-checker/path-in-locales": ['error',
   {
     localesPath: 'public/locales/',
     messagesBasePath: 'translations',
@@ -61,7 +61,7 @@ You can contribute submitting [pull requests](https://github.com/natura-cosmetic
 
 ## Setup
 
-Install the dependencies running `yarn` in the project folder. li
+Install the dependencies running `yarn` in the project folder.
 
 ## Lint
 

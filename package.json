@@ -1,6 +1,6 @@
 {
   "name": "@naturacosmeticos/eslint-plugin-i18n-checker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Natura Cosméticos <TDDAArquitetura@natura.net>",
   "main": "index.js",
   "description": "Helps you identify what locales keys are not included in your locales files",
