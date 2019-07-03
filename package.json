@@ -9,7 +9,8 @@
     "url": "git+ssh://git@github.com:natura-cosmeticos/eslint-plugin-i18n-checker.git"
   },
   "dependencies": {
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.11",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
@@ -22,7 +23,9 @@
     "lint": "eslint src/ test/",
     "lint:fix": "eslint --fix src/ test/",
     "test": "mocha",
-    "test:watch": "mocha -w"
+    "test:watch": "mocha -w",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "contributors": [
     "Daniel Arthaud <daniel@vizir.com.br>",
@@ -36,5 +39,6 @@
     "nodejs",
     "style-guide"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
