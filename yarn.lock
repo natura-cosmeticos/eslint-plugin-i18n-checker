@@ -18,10 +18,10 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@naturacosmeticos/eslint-config-natura@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@naturacosmeticos/eslint-config-natura/-/eslint-config-natura-1.0.0.tgz#d2cd5648381edc5221a3a59782ccfbcfb775eebe"
-  integrity sha512-GfSHGeZ9RpW4xG1PZGKshPR8bhxBDBBscpAZxaEU1/EO2SZum8f6C+z8uOkBqBoid2cbECIolswCIDR5QUwcLw==
+"@naturacosmeticos/eslint-config-natura@1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@naturacosmeticos/eslint-config-natura/-/eslint-config-natura-1.1.1.tgz#78dad46767d449906a830201bbf0a27bf28bce38"
+  integrity sha512-EIBLeM5QEfKmvCZqCwHvEn39Zr6hFyx2krkwzbIJJp7wNcf3QTnTXAWf2sSpGss3UvaHtes1GDUpnRABAEtChg==
   dependencies:
     eslint "^5.7.0"
     eslint-config-airbnb-base "^13.1.0"
